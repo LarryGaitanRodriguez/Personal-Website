@@ -1,0 +1,18 @@
+$primary-color: white;
+$secondary-color: #c7493a;
+
+$show-header-img: true;
+$header-img: url('../dist/img/header.jpg');
+//Mixins
+@mixin background{
+    @if show-header-img{
+        background: $header-img;
+    }
+}
+
+.secondary-text{
+    color: $secondary-color;
+}
+#home{
+    @include background;
+}
