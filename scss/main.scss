@@ -7,19 +7,43 @@ $header-img: url('../dist/img/header.jpg');
 //Universial Margins
 $standard_margin: 15px;
 
+$primary-text-size: 25px;
+$secondary-text-size: 20px;
 
+@mixin list-size-para{
+     ul{
+        li{
+           p{
+             font-size: $secondary-text-size;
+           }
+        }
+    }
+}
+
+@mixin list-size-link{
+      ul{
+        li{
+           a{
+             font-size: $secondary-text-size;
+           }
+        }
+    }
+}
 
 #about{
     margin: $standard_margin;
+    @include list-size-para;
+}
+#projects{
+    .row{
+        &.col-md-4{
+            @include list-size-link;
+        }
+    }
 }
 .secondary-text{
     color: $secondary-color;
 }
-header{
-    background: $header-img;
-}
-
 p{
-    font-size: 25px;
+    font-size: $primary-text-size;
 }
-

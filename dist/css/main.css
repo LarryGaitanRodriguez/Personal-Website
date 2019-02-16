@@ -1,11 +1,13 @@
 #about {
   margin: 15px; }
+  #about ul li p {
+    font-size: 20px; }
+
+#projects .row.col-md-4 ul li a {
+  font-size: 20px; }
 
 .secondary-text {
   color: #c7493a; }
-
-header {
-  background: url("../dist/img/header.jpg"); }
 
 p {
   font-size: 25px; }
