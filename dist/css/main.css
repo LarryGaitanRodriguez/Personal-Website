@@ -1,5 +1,11 @@
+#about {
+  margin: 15px; }
+
 .secondary-text {
   color: #c7493a; }
 
-#home {
+header {
   background: url("../dist/img/header.jpg"); }
+
+p {
+  font-size: 25px; }

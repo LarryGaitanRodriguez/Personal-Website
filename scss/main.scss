@@ -3,16 +3,23 @@ $secondary-color: #c7493a;
 
 $show-header-img: true;
 $header-img: url('../dist/img/header.jpg');
-//Mixins
-@mixin background{
-    @if show-header-img{
-        background: $header-img;
-    }
-}
 
+//Universial Margins
+$standard_margin: 15px;
+
+
+
+#about{
+    margin: $standard_margin;
+}
 .secondary-text{
     color: $secondary-color;
 }
-#home{
-    @include background;
+header{
+    background: $header-img;
 }
+
+p{
+    font-size: 25px;
+}
+
