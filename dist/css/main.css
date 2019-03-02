@@ -9,5 +9,27 @@
 .secondary-text {
   color: #c7493a; }
 
+.navigation-bar {
+  padding: 3em; }
+
+.brand {
+  float: left;
+  color: orange; }
+  .brand h1 {
+    font-size: 4em; }
+
+.nav-list {
+  float: right;
+  margin: 10px; }
+  .nav-list li {
+    display: inline-block; }
+
+.nav-btn {
+  margin: 20px;
+  font-size: 1.5em; }
+
+.clearfix {
+  overflow: auto; }
+
 p {
   font-size: 25px; }

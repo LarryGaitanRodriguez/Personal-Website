@@ -1,15 +1,14 @@
+//Color Definitions
 $primary-color: white;
 $secondary-color: #c7493a;
-
-$show-header-img: true;
-$header-img: url('../dist/img/header.jpg');
-
 //Universial Margins
 $standard_margin: 15px;
 
+//Universal Text Sizes
 $primary-text-size: 25px;
 $secondary-text-size: 20px;
 
+//Mixins
 @mixin list-size-para{
      ul{
         li{
@@ -29,7 +28,7 @@ $secondary-text-size: 20px;
         }
     }
 }
-
+//ID CSS
 #about{
     margin: $standard_margin;
     @include list-size-para;
@@ -41,9 +40,38 @@ $secondary-text-size: 20px;
         }
     }
 }
+
+//Class CSS
 .secondary-text{
     color: $secondary-color;
 }
+
+//navigation bar
+.navigation-bar{
+    padding: 3em;
+}
+.brand{
+    float: left;
+    color: orange;
+    h1{
+        font-size: 4em;
+    }
+}
+.nav-list{
+    float: right;
+    margin: 10px;
+    li{
+        display: inline-block;
+    }
+}
+.nav-btn{
+    margin: 20px;
+    font-size: 1.5em;
+}
+.clearfix {
+  overflow: auto;
+}
+//Elements CSS
 p{
     font-size: $primary-text-size;
 }
