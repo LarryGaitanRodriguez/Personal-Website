@@ -28,6 +28,12 @@ $secondary-text-size: 20px;
         }
     }
 }
+//Gridbox
+.wrapper{
+    display: grid;
+    grid-gap: 1em;
+    grid-auto-rows: 6em;
+}
 //ID CSS
 #about{
     margin: $standard_margin;
@@ -48,7 +54,7 @@ $secondary-text-size: 20px;
 
 //navigation bar
 .navigation-bar{
-    padding: 3em;
+    padding: 1em;
 }
 .brand{
     float: left;
