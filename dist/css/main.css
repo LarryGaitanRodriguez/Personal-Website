@@ -1,0 +1,119 @@
+/*Variables*/
+:root{
+  --universal_margin: 45px;
+  --uniform_color:  rgb(255, 165, 0);
+  --title-size: 56px;
+  --side-margin: 32px;
+}
+
+
+/* Navigation Bar */
+
+#nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#nav-content{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-btn{
+  margin: var(--universal_margin);
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.nav-btn a:hover{
+  color: var(--uniform_color);
+  transition: .5s ease;
+}
+
+.brand{
+  margin: 15px 15px 15px 30px;
+}
+.brand h1{
+  font-size: var(--title-size);
+  color: var(--uniform_color);
+}
+
+/* The fonts used
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'IBM Plex Mono', monospace;
+*/
+
+/* Text fonts, colors, sizes */
+body{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.secondary-text{
+  color: var(--uniform_color);
+}
+
+/* header */
+#header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#short-bio{
+  width: 70%;
+  margin-left: var(--side-margin);
+}
+
+.header-text{
+  font-size: var(--title-size);
+}
+
+img {
+  width: 20%;
+  height: auto;
+}
+
+/*projects introduction*/
+#proj-info{
+  background-color: rgb(250,250,250);
+}
+#proj-info h2{
+  font-size: var(--title-size);
+  margin-left: var(--side-margin);
+  color: var(--uniform_color);
+}
+
+#proj-info p{
+  margin-left: var(--side-margin);
+  margin-right: var(--side-margin);
+  font-size: 32px;
+}
+
+/*Showcase of projects*/
+#showcase{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.sc-project{
+  background-color: rgb(240,240,240);
+  width: 25%;
+  font-size: 26px;
+  padding: 16px;
+}
+
+.sc-project li{
+  list-style: none;
+  font-size: 20px;
+}
+
+.sc-project a:hover{
+  color: var(--uniform_color);
+  transition: .5s ease;
+}

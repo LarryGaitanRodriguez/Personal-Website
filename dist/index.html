@@ -10,37 +10,51 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
         <!--Google Fonts Link--->
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i" rel="stylesheet">
         <title>Larry Gaitan-Rodriguez</title>
     </head>
     <body>
-        <div class="wrapper">
-            <nav class="navigation-bar clearfix">
+            <nav id="nav-bar">
                 <div class="brand">
                     <h1>LGR</h1>
                 </div>
-                <div class="nav-list">
-                    <ul>
-                        <li class="nav-btn"><a href="#"><i class="fab fa-linkedin fa-3x"></i></a></li>
-                        <li class="nav-btn"><a href="#"><i class="fab fa-github fa-3x"></i></a> </li>
+                <div>
+                    <ul id="nav-content">
+                        <div>
+                            <li class="nav-btn"><a href="#"><i class="fab fa-linkedin fa-4x"></i></a></li>
+                        </div>
+                        <div>
+                            <li class="nav-btn"><a href="#"><i class="fab fa-github fa-4x"></i></a> </li>
+                        </div>
                     </ul>
                 </div>
             </nav>
             <!--Main page-->
-            <header>                <!--Page Introduction-->
-                <div id="home">
-                    <h1>Hello world, I'm Larry <span class="secondary-text">Gaitan-Rodriguez</span></h1>
-                    <h1>A engineering Student in the Metro Atlanta Area, learning front-end web development.</h1>
+            <header>                
+                <!--Page Introduction-->
+                <div id="header">
+                    <div id="short-bio">
+                        <p class="header-text">Hello world, I'm Larry Gaitan-Rodriguez. I'm a engineering Student, from the Metro Atlanta Area, who is learning front-end web developing.</p>
+                    </div>
+                    <div class="portrait">
+                        
+                    </div>
                 </div>
             </header>
+            <!--Projects-->
             <main>
                 <!--Introduction of projects-->
-                <div id="projects">
+                <div id="proj-info">
                     <h2>My works</h2>
-                        <p>
-                            A few projects are a part of the freeCodeCamp Curriculum, a few are from my classes, a few are because I wanted to play around and learn
-                            something new. Works that are shown are not limited to front-end projects. Please do feel free to contact me in
-                            regard to any of my projects.
-                        </p>
+                    <p>
+                        A few projects are a part of the freeCodeCamp Curriculum, a few are from my classes, a few are because I wanted to play around and learn
+                        something new. 
+                    </p>
+
+                    <p>
+                        The works that are shown are not limited to front-end projects. Please do feel free to contact me in
+                        regard to any of my projects.
+                    </p>
                 </div>
                     
                 <!--Beginning of projects showcase-->
@@ -48,54 +62,58 @@
                     <!--Presidential Tribtute-->
                     <div class="sc-project">
                         <h3>Presidential Tribute</h3>
-                        <p>
-                            To put to work the first skills learned from the freeCodeCamp Curriculum, the website asks that users create
-                            a tribute/bio website of a famous person. At the time I choose president Barak Obama. The Website is made of
-                            basic
-                            HTML and CSS and no frameworks.
-                            <ul>
-                                <li>
-                                    <a href="#">See on Codepen</a>
-                                </li>
-                                <li>
-                                    <a href="#">See stand alone.</a>
-                                </li>
-                            </ul>
-                        </p>
+                            <div class="sc-info">
+                                <p>
+                                    To put to work the first skills learned from the freeCodeCamp Curriculum, the website asks that users create
+                                    a tribute/bio website of a famous person. At the time I choose president Barack Obama. The Website is made of
+                                    basic HTML and CSS and no frameworks.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a href="#"><strong>See on Codepen</strong>  <i class="fab fa-codepen"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><strong>Stand alone</strong>   <i class="fas fa-file"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                     </div>
                     
                     <!--First attempt at porfolio-->
                     <div class="sc-project">
                         <h3>First attempt at Portfolio</h3>
-                        <p>
+                        <div class="sc-info">
+                            <p>
                                 One of the bigger first projects of freeCodeCamp, the portfolio was meant to be a project in itself and
-                            and it was meant to show off other projects. This website is made of HTML, CSS, and Bootstrap.
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="#">See on Codepen</a>
-                            </li>
-                            <li>
-                                <a href="#">See stand alone</a>
-                            </li>
-                        </ul>
+                                and it was meant to show off other projects. This website is made of HTML, CSS, and Bootstrap.
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="#"><strong>See on Codepen</strong>  <i class="fab fa-codepen"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><strong>Stand alone</strong>  <i class="fas fa-file"></i></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     
                     <!-- Time Converter in JAVA-->
                     <div class="sc-project">
-                        <h3>Time Converter written in Java</h3>
-                        <p>
-                            One of the first homeworks in my Computer Science I class, we were tasked to make
-                            a program that asked the user the amount of Years, Months, Days, Hours, Minutes they wanted to convert into
-                            seconds.
-                            I wrote up a much more detailed exponation on what were the requirements and restrictions, what it does, and
-                            what I learned.
-                            That write up can be found in the links down below.
-                        </p>
-                        <ul>
-                            <li><a href="#">My First CS homework, what about it?</a></li>
-                            <li><a href="#">See on Github</a></li>
-                        </ul>
+                            <h3>Time Converter in Java</h3>
+                            <div class="sc-info">
+                                <p>
+                                    One of my first Java programs, I created 
+                                    a program that asked the user the amount of Years, Months, Days, Hours, Minutes they wanted to convert into
+                                    seconds.
+                            
+                                    I have a detailed write up can be found in the links down below.
+                                </p>
+                                <ul>
+                                    <li><a href="#"><strong>What about it?</strong> <i class="fas fa-file"></i></a></li>
+                                    <li><a href="#"><strong>Github</strong> <i class="fab fa-github"></i></a></li>
+                                </ul>
+                            </div>
                     </div>
                 </div>   
             </main>        
