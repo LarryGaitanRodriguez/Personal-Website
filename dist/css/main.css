@@ -2,7 +2,7 @@
 :root{
   --universal_margin: 45px;
   --uniform_color:  rgb(255, 165, 0);
-  --title-size: 56px;
+  --title-size: 48px;
   --side-margin: 32px;
 }
 
@@ -74,10 +74,6 @@ body{
   font-size: var(--title-size);
 }
 
-img {
-  width: 20%;
-  height: auto;
-}
 
 /*projects introduction*/
 #proj-info{
@@ -96,16 +92,31 @@ img {
 }
 
 /*Showcase of projects*/
+.title-section{
+  font-size: 26px;
+  color: var(--uniform_color);
+  margin-left: 32px;
+  margin-top: 64px;
+  margin-bottom: 64px; 
+  
+}
 #showcase{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: var(--universal_margin);
 }
+
 .sc-project{
   background-color: rgb(240,240,240);
-  width: 25%;
+  width: 32%;
   font-size: 26px;
   padding: 16px;
+  border-radius: 15px;
+}
+
+.sc-project h3{
+  text-align: center;
 }
 
 .sc-project li{
@@ -116,4 +127,61 @@ img {
 .sc-project a:hover{
   color: var(--uniform_color);
   transition: .5s ease;
+}
+.sc-info img{
+  width: 100%;
+  height: auto;
+}
+/*showcase of java projects*/
+#java-showcase{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+#java-showcase a:hover{
+  background-color: var(--uniform_color);
+  transition: .5s ease;
+}
+
+.java-proj{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top-style: solid;
+
+}
+
+.java-proj p{
+  font-size: 24px;
+}
+
+/* Footer */
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: var(--universal_margin);
+
+}
+
+#contact p{
+  font-size: 32px;
+}
+
+#profiles a:hover{
+  color: var(--uniform_color);
+  transition: .5s ease;
+}
+
+#profiles a{
+  font-size: 20px;
+}
+
+.link-margin{
+  margin-left: var(--side-margin);
+}
+
+#little-comment p{ 
+  font-size: 20px;
 }
