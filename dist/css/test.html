@@ -1,0 +1,100 @@
+<style>
+
+:root{
+  --universal_margin: 45px;
+  --uniform_color:  rgb(255, 165, 0);
+  --title-size: 56px;
+  --side-margin: 32px;
+}
+
+    #showcase{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: var(--universal_margin);
+}
+.sc-project{
+  background-color: rgb(240,240,240);
+  width: 25%;
+  font-size: 26px;
+  padding: 16px;
+  border-radius: 15px;
+}
+
+.sc-project li{
+  list-style: none;
+  font-size: 20px;
+}
+
+.sc-project a:hover{
+  color: var(--uniform_color);
+  transition: .5s ease;
+}
+
+.sc-info{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+</style>
+
+<div id="showcase">
+        <!--Presidential Tribtute-->
+        <div class="sc-project">
+            <h3>Presidential Tribute</h3>
+                <div class="sc-info">
+                    <p>git
+                        To put to work the first skills learned from the freeCodeCamp Curriculum, the website asks that users create
+                        a tribute/bio website of a famous person. At the time I choose president Barack Obama. The Website is made of
+                        basic HTML and CSS and no frameworks.
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#"><strong>See on Codepen</strong>  <i class="fab fa-codepen"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><strong>Stand alone</strong>   <i class="fas fa-file"></i></a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        
+        <!--First attempt at porfolio-->
+        <div class="sc-project">
+            <h3>First attempt at Portfolio</h3>
+            <div class="sc-info">
+                <p>
+                    One of the bigger first projects of freeCodeCamp, the portfolio was meant to be a project in itself and
+                    and it was meant to show off other projects. This website is made of HTML, CSS, and Bootstrap.
+                </p>
+                <ul>
+                    <li>
+                        <a href="#"><strong>See on Codepen</strong>  <i class="fab fa-codepen"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><strong>Stand alone</strong>  <i class="fas fa-file"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Time Converter in JAVA-->
+        <div class="sc-project">
+                <h3>Time Converter in Java</h3>
+                <div class="sc-info">
+                    <p>
+                        One of my first Java programs, I created 
+                        a program that asked the user the amount of Years, Months, Days, Hours, Minutes they wanted to convert into
+                        seconds.
+                
+                        I have a detailed write up can be found in the links down below.
+                    </p>
+                    <ul>
+                        <li><a href="#"><strong>What about it?</strong> <i class="fas fa-file"></i></a></li>
+                        <li><a href="#"><strong>Github</strong> <i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>   
